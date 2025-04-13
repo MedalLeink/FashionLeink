@@ -31,9 +31,14 @@ body {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    background-color: var(--background-color);
     box-shadow: 0px 4px 12px rgb(205, 204, 204);
-    height: 90px;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #FFFFFF80;
     
 }
 
@@ -56,7 +61,6 @@ body {
     color: var(--text-color-1);
     padding: 6px 0px; 
     cursor: pointer;
-    /* text-align: left; */
 }
 
 .navbar a.active {
@@ -68,33 +72,41 @@ body {
     color: var(--primary-color);
 }
 
-.navbar .search {
-    /* width: 20%; */
-    /* padding: 6px; */
-    background-color: #f3f3f3;
-    border-radius: 50px;
-    box-shadow: 0px 2px 8px rgb(224, 223, 223);
-    color: rgb(139, 136, 136);
+.search-container {
+    position: relative;
+    width: 200px;
+    padding-right: 15px;
+  }
+  
+  .search-input {
+    width: 100%;
+    border: none;
+    padding: 15px 0px 15px 15px;
+    background-color: #00000010;
+    border-radius: 99px;
+    box-shadow: 0px 2px 8px #00000012;
+    color: rgb(105, 105, 105);
     font-weight: 300;
     font-size: var(--font-size-base);
     letter-spacing: 1px;
-    padding-left: 20px;
-    padding-right: 10px;
-    align-items: center;
-}
-
-.navbar .search:hover {
-    color: rgb(139, 136, 136);;
-}
-
-.search i {
+    outline: none;
+  }
+  
+  .search-container i {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 20px;
     padding: 6px;
     background-color: var(--primary-color);
-    border-radius: 50px;
+    border-radius: 50%;
     color: #fff;
-    margin-left: 100px;
-    margin-right: 0;
+    cursor: pointer;
+  }
+
+.navbar .search:hover {
+    color: rgb(139, 136, 136);;
 }
 
 .profile,
@@ -128,22 +140,11 @@ body {
     margin-left: 10px;
 }
 
-
 main h1{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-
-.main {
-    display: grid;
-    grid-template-columns: repeat(2, auto); /* Two columns */
-    grid-template-rows: auto auto; /* Two rows */
-    font-size: var(--hero-font-size);
-    justify-content: left;
-    margin: 143px 0px 0px 100px;
-    gap: 5px 20px; /* Reduce gap for better alignment */
-}
-
 
 .title_1 {
     color: var(--text-color-1);
@@ -151,4 +152,27 @@ main h1{
 
 .title_2 {
     color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+    background: linear-gradient(to left, #FFFFFF, #DFEBED);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: var(--hero-font-size);
+    justify-content: left;
+    margin: 0; /* Remove extra margin */
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0; /* Prevents image from shrinking */
 }
