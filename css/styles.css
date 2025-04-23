@@ -31,14 +31,14 @@ body {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    box-shadow: 0px 4px 12px rgb(205, 204, 204);
+    box-shadow: 0px 4px 12px #00000014;
     height: 85px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: #FFFFFF80;
+    background-color: #FFFFFF;
     
 }
 
@@ -159,7 +159,7 @@ main {
     font-size: var(--hero-font-size);
     justify-content: start;
     margin-bottom: 20px;
-    line-height: 80px;
+    line-height: 50px;
     margin-left: 100px;
   }
 
@@ -183,7 +183,7 @@ main {
   .main-description {
     font-family: var(--font-primary);
     font-size: var(--font-size-lg);
-    color: #17171790;
+    color: #17171798;
     line-height: 28px;
     letter-spacing: 0.3px;
     margin: 50px 0px 73px 100px;
@@ -242,4 +242,91 @@ main {
     width: 28px;
     border-radius: 999px;
   }
+
+  .partner {
+    background-color: #171717;
+    height: 127px;
+  }
+
+  .partner_content {
+    width: 1210px;
+    height: 81px;
+    gap: 70px;
+    margin-left: 115px;
+    padding: 23px;
+  }
+
+  .kikoromco {
+    width: 60px;
+    height: 44.72px;
+    margin-right: 70px;
+  }
+
+  .deola {
+    width: 90px;
+    height: 44.8px;
+    margin-right: 70px;
+  }
+
+  .vlisco {
+    width: 110px;
+    height: 71px;
+    margin-right: 70px;
+  }
+
+  .sabyasachi {
+    width: 140px;
+    height: 42.09px;
+    margin-right: 70px;
+  }
+
+  .label {
+    width: 70px;
+    height: 33.77px;
+    margin-right: 70px;
+  }
+
+  .zimmermann {
+    width: 130px;
+    height: 31.18px;
+    margin-right: 70px;
+  }
+
+  .fabindia {
+    width: 110px;
+    height: 41.83px;
+  }
   
+.featured {
+    margin-top: 100px;
+    text-align: left;
+}
+
+.featured h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -2%;
+    text-align: center;
+}
+
+.featured_sub {
+    height: 616px;
+    top: 1262px;
+    margin-left: 100px;
+    font-family: 'Robot', sans-serif;
+}
+
+.feature.active {
+    border-bottom: 4px solid #000000;
+    padding: 10px 100px 10px 120px;
+    border-radius: 4px;
+    border-color: #171717;
+    border-top-right-radius: 40px;
+    text-decoration: none;
+}
+
+/* .feature.active span{
+    border-bottom: 4px solid #000000;
+    padding-right: 200px;
+} */
